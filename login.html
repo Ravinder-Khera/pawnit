@@ -17,24 +17,26 @@
             <div class="row">
                 <div class='col-xl-4 col-lg-6 col-md-10 mx-auto'>
                     <div class='login-form'>
-                        <div class='form-main-heading'>
-                            <img src="/images/form-img.png" class='img-fluid' />
-                            <h2>Login</h2>
+                        <div class='form-main-heading my-3'>
+                            <img src="./PW_Logo-Full.png" class='img-fluid' />
                         </div>
 
-                        <form onSubmit={handleLogin}>
-                            <div class="form-group mt-5">
-                                <input type="email" class="form-control log-form" id="username"
-                                    aria-describedby="Email Address" placeholder="Email" value={state.username}
-                                    onChange={handleOnChange} required autoComplete="off" />
+                        <form class="text-center">
+                            <div class="mb-3 text-start mt-5">
+                                <label for="LocationInput" class="form-label">Location</label>
+                                <select id="LocationInput" class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
-                            <div class="form-group mt-5">
-                                <input type="password" class="form-control log-form" id="password"
-                                    aria-describedby="Password" placeholder="Password" value={state.password}
-                                    onChange={handleOnChange} required autoComplete="off" />
-                                
+                            <div class="mb-3 text-start">
+                                <label for="PasswordInput" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="PasswordInput">
                             </div>
-                            <div class="form-check mt-4 d-flex justify-content-between flex-wrap">
+                            
+                            <!-- <div class="form-check mt-4 d-flex justify-content-between flex-wrap">
                                 <div class='form-checkbox-class'>
                                     <input type="checkbox" class="form-check-input" id="rememberMe"
                                         onChange={handleOnChange} checked={state.rememberMe} />
@@ -43,8 +45,8 @@
                                 <div class='forgot-password-link'>
                                     <a href='forgot-password'>In case you Forgot Password?</a>
                                 </div>
-                            </div>
-                            <button type="submit" class="btn log-btn mt-5">Login</button>
+                            </div> -->
+                            <button type="submit" class="btn log-btn mt-5 mx-auto">Login</button>
                         </form>
                     </div>
                 </div>
