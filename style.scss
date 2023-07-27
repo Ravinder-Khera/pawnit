@@ -1,16 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 section {
   background-color: #EEF2F6;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  @media screen and (max-width:1366px) {
+    padding-top: 60px;
+  }
+  .quesgtion_mark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    background: #369EA4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
   .container {
     .login-form {
       background: #FFF;
       box-shadow: 0px 0px 16px 0px #A1D2D5;
       padding: 80px 40px;
+      @media screen and (max-width:575px) {
+        padding: 40px 20px;
+      }
       min-height: 453px;
       color: #369EA4;
       font-feature-settings: 'clig' off, 'liga' off;
@@ -38,7 +60,27 @@ section {
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
-          line-height: 24px; /* 171.429% */
+          line-height: 24px;
+          option{
+            background: #FBFCFD;
+            outline: none;
+            border-radius: 12px;
+            border: 0px solid transparent;
+            color: #369EA4;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+            &:hover{
+              background: #369EA4;
+              outline: none;
+              border-radius: 12px;
+              border: 0px solid transparent;
+              color: #FBFCFD;
+            }
+          }
           &:focus{
             outline: none;
             box-shadow: none;
@@ -56,6 +98,40 @@ section {
           font-weight: 400;
           line-height: 24px; /* 150% */
         }
+      }
+    }
+  }
+  footer{
+    margin-top: 100px;
+    .footer_position{
+      margin-top: 64px;
+    }
+    .footer_container{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: #339FA4;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 200% */
+      h5{
+        font-size: 12px;
+        span{
+          height: 24px;
+          width: 24px;
+          border-radius: 50%;
+          background: #fff;
+          justify-content: center;
+          align-items: center;
+          margin: 0 8px;
+        }
+      }
+      p{
+        font-size: 10px;
       }
     }
   }

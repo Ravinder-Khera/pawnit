@@ -13,6 +13,9 @@
 
 <body>
     <section>
+        <div class="quesgtion_mark">
+            <img src="./q.png" class="img-fluid">
+        </div>
         <div class="container">
             <div class="row">
                 <div class='col-xl-4 col-lg-6 col-md-10 mx-auto'>
@@ -25,7 +28,7 @@
                             <div class="mb-3 text-start mt-5">
                                 <label for="LocationInput" class="form-label">Location</label>
                                 <select id="LocationInput" class="form-select" aria-label="Default select example">
-                                    <option selected>Open this select menu</option>
+                                    <option selected>select</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -35,23 +38,19 @@
                                 <label for="PasswordInput" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="PasswordInput">
                             </div>
-                            
-                            <!-- <div class="form-check mt-4 d-flex justify-content-between flex-wrap">
-                                <div class='form-checkbox-class'>
-                                    <input type="checkbox" class="form-check-input" id="rememberMe"
-                                        onChange={handleOnChange} checked={state.rememberMe} />
-                                    <label htmlFor="rememberMe" class='rememberMe'>Remember Me</label>
-                                </div>
-                                <div class='forgot-password-link'>
-                                    <a href='forgot-password'>In case you Forgot Password?</a>
-                                </div>
-                            </div> -->
-                            <button type="submit" class="btn log-btn mt-5 mx-auto">Login</button>
+                            <button type="submit" class="btn log-btn mt-sm-5 mt-2 mx-auto">Login</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer_position"></div>
+            <div class="footer_container">
+                <h5>Powered By <span><img src="./footer.png" class="img-fluid"></span></h5>
+                <p>For Pawnbrokers & Secondhand Dealers</p>
+            </div>
+        </footer>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
