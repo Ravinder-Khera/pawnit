@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-section {
+.login_section {
   background-color: #EEF2F6;
   min-height: 100vh;
   display: flex;
@@ -8,13 +8,9 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 70px;
 }
-@media screen and (max-width: 1366px) {
-  section {
-    padding-top: 60px;
-  }
-}
-section .quesgtion_mark {
+.login_section .quesgtion_mark {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -27,7 +23,7 @@ section .quesgtion_mark {
   align-items: center;
   cursor: pointer;
 }
-section .container .login-form {
+.login_section .container .login-form {
   background: #FFF;
   box-shadow: 0px 0px 16px 0px #A1D2D5;
   padding: 80px 40px;
@@ -42,19 +38,19 @@ section .container .login-form {
   letter-spacing: -0.5px;
 }
 @media screen and (max-width: 575px) {
-  section .container .login-form {
+  .login_section .container .login-form {
     padding: 40px 20px;
   }
 }
-section .container .login-form .form-main-heading {
+.login_section .container .login-form .form-main-heading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .container .login-form form {
+.login_section .container .login-form form {
   align-items: center;
 }
-section .container .login-form form input, section .container .login-form form select {
+.login_section .container .login-form form input, .login_section .container .login-form form select {
   border-radius: 24px;
   border: none;
   background: #EEF2F6;
@@ -66,7 +62,7 @@ section .container .login-form form input, section .container .login-form form s
   font-weight: 400;
   line-height: 24px;
 }
-section .container .login-form form input option, section .container .login-form form select option {
+.login_section .container .login-form form input option, .login_section .container .login-form form select option {
   background: #FBFCFD;
   outline: none;
   border-radius: 12px;
@@ -79,18 +75,18 @@ section .container .login-form form input option, section .container .login-form
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
-section .container .login-form form input option:hover, section .container .login-form form select option:hover {
+.login_section .container .login-form form input option:hover, .login_section .container .login-form form select option:hover {
   background: #369EA4;
   outline: none;
   border-radius: 12px;
   border: 0px solid transparent;
   color: #FBFCFD;
 }
-section .container .login-form form input:focus, section .container .login-form form select:focus {
+.login_section .container .login-form form input:focus, .login_section .container .login-form form select:focus {
   outline: none;
   box-shadow: none;
 }
-section .container .login-form form button {
+.login_section .container .login-form form button {
   border-radius: 4px;
   padding: 10px;
   background: #369EA4;
@@ -102,13 +98,13 @@ section .container .login-form form button {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-section footer {
+.login_section footer {
   margin-top: 100px;
 }
-section footer .footer_position {
+.login_section footer .footer_position {
   margin-top: 64px;
 }
-section footer .footer_container {
+.login_section footer .footer_container {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -121,10 +117,10 @@ section footer .footer_container {
   font-weight: 600;
   line-height: 24px; /* 200% */
 }
-section footer .footer_container h5 {
+.login_section footer .footer_container h5 {
   font-size: 12px;
 }
-section footer .footer_container h5 span {
+.login_section footer .footer_container h5 span {
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -133,6 +129,232 @@ section footer .footer_container h5 span {
   align-items: center;
   margin: 0 8px;
 }
-section footer .footer_container p {
+.login_section footer .footer_container p {
   font-size: 10px;
+}
+
+.dashboard_section {
+  background-color: #ffffff;
+}
+.dashboard_section .custom_container {
+  padding: 30px;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+@media screen and (max-width: 1366px) {
+  .dashboard_section .custom_container {
+    padding: 20px;
+  }
+}
+.dashboard_section .custom_container .custom_col_nav {
+  border-radius: 24px;
+  background: #369EA4;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 3px 3px 5px 0px #EEF2F6;
+}
+.dashboard_section .custom_container .custom_col_nav .lgog_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.dashboard_section .custom_container .custom_col_nav ul {
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.dashboard_section .custom_container .custom_col_nav ul li {
+  padding: 20px 0;
+  color: #FFF;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 85.714% */
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+.dashboard_section .custom_container .custom_col_nav .footer_nav {
+  width: 100%;
+  height: 88px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+}
+@media screen and (max-width: 1299px) {
+  .dashboard_section .custom_container .custom_col_nav {
+    max-width: 90px;
+  }
+  .dashboard_section .custom_container .custom_col_nav.open {
+    max-width: 260px;
+    transition: 0.5s all;
+  }
+  .dashboard_section .custom_container .custom_col_nav.open a svg {
+    margin: 0 10px;
+  }
+  .dashboard_section .custom_container .custom_col_nav.open a span {
+    display: contents;
+  }
+  .dashboard_section .custom_container .custom_col_nav.open .footer_nav_icon {
+    margin-top: -28px;
+  }
+  .dashboard_section .custom_container .custom_col_nav.open .footer_nav_icon .foote_nav_menu {
+    display: flex;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon {
+    margin-top: 10px;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .svg_img {
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    height: 56px;
+    width: 56px;
+    margin: auto;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .foote_nav_menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .foote_nav_menu img {
+    margin: 10px;
+  }
+  .dashboard_section .custom_container .custom_col_nav ul li a svg {
+    margin: 0;
+  }
+  .dashboard_section .custom_container .custom_col_nav ul li span {
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .dashboard_section .custom_container .custom_col_nav {
+    max-width: 290px;
+  }
+  .dashboard_section .custom_container .custom_col_nav ul li a svg {
+    margin: 0 10px;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon {
+    margin-top: -28px;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .svg_img {
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    height: 56px;
+    width: 56px;
+    margin: auto;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .foote_nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard_section .custom_container .custom_col_nav .footer_nav_icon .foote_nav_menu img {
+    margin: 10px;
+  }
+}
+.dashboard_section .custom_container .custom_col_dashboard img {
+  max-height: 24px;
+  margin: 10px;
+}
+.dashboard_section .custom_container .custom_col_dashboard input#search {
+  background-image: url("./searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 20px;
+  height: 45px;
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  border-radius: 66px;
+  border: 1px solid #369EA4;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  color: #369EA4;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.dashboard_section .custom_container .custom_col_dashboard input#search:focus-visible {
+  outline: none;
+}
+.dashboard_section .custom_container .custom_col_right {
+  max-width: 290px;
+}
+.dashboard_section .custom_container .custom_col_right .welcome_back {
+  width: 100%;
+  height: 88px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 24px;
+  background: #CDE7E8;
+}
+.dashboard_section .custom_container .custom_col_right .welcome_back .svg_img {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px 0px #A1D2D5;
+  margin: 0 10px;
+}
+.dashboard_section .custom_container .custom_col_right .welcome_back h3 {
+  color: #369EA4;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 75% */
+  letter-spacing: -0.5px;
+}
+.dashboard_section .custom_container .custom_col_right .action_to_complete {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+}
+@media screen and (min-width: 1399px) {
+  .dashboard_section .custom_container .custom_col_right .action_to_complete {
+    min-height: 400px;
+  }
+}
+.dashboard_section .custom_container .custom_col_right .action_to_complete .top_part {
+  border-radius: 24px 24px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #369EA4;
+  padding: 10px;
+}
+.dashboard_section .custom_container .custom_col_right .action_to_complete .top_part .svg_img {
+  padding: 10px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 16px 0px #A1D2D5;
+  margin: 0 10px;
+}
+.dashboard_section .custom_container .custom_col_right .action_to_complete .top_part h3 {
+  color: #EEF2F6;
+  font-feature-settings: "clig" off, "liga" off;
+  /* Poppins Header */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 75% */
+  letter-spacing: -0.5px;
 }/*# sourceMappingURL=style.css.map */
